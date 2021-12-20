@@ -15,7 +15,7 @@ import java.util.List;
 public class TimeConfigScreen extends GuiConfigsBase {
 
     public TimeConfigScreen() {
-        super(10, 30, ClientTime.MOD_ID, null, "clienttime.screen.time");
+        super(10, 30, ClientTime.MOD_ID, null, "clienttime.screen.main");
     }
 
     private IConfigOptionListEntry previousEntry = ConfigStorage.Time.TIME_TYPE.config.getOptionListValue();

@@ -1,4 +1,5 @@
 {
+  "clienttime.screen.main": "§eClientTime Config",
   "clienttime.config.time.active": "Active",
   "clienttime.config.time.info.active": "Whether or not the current time is §6overridden§r",
 
@@ -7,13 +8,13 @@
   "clienttime.config.timetype.loop_reverse": "§bLoop Reverse",
 
   "clienttime.config.time.timetype": "Time Type",
-  "clienttime.config.time.info.timetype": "The type of way the time is set. \n§9Static§r - Time is constant\n§9Loop Skip§r - Start and go to the end and immediately jump back to the start\n§9Loop Reverse§r Start and go the end then go back to the start",
+  "clienttime.config.time.info.timetype": "The behavior of how ClientTime sets the time \n\n§6Static§r - The time §6doesn't change§r, akin to having doDaylightCycle off\n§9Loop Skip§r - When the §6end time§r is reached, ClientTime will set the current\n time §6back to the start time§r\n§bLoop Reverse§r - When the end time is reached, the currenrt time will go §6backwards§r\n until the start time is reached, at which point time will go forwards again",
   "clienttime.config.time.time": "Time",
   "clienttime.config.time.info.time": "The §6time that is set when the mod is active§r, in ticks\nWhen §6Loop Speed§r is greater than §b0§r, then this value corresponds to the §6starting time of the loop§r, in ticks",
   "clienttime.config.time.loopspeed": "Loop Speed",
   "clienttime.config.time.info.loopspeed": "How quickly the §6time should advance§r, in ticks per second, when looping. Set this value to §b0§r to §cdisable§r looping altogether",
   "clienttime.config.time.loopstart": "Start Time",
-  "clienttime.config.time.info.loopstart": "If loopspeed is §6greater than §b0§r, then this value corresponds to the §6start time of the loop§r, in ticks",
+  "clienttime.config.time.info.loopstart": "The §6start time§r of the loop, in ticks",
   "clienttime.config.time.loopend": "End Time",
-  "clienttime.config.time.info.loopend": "If loopspeed is §6greater than §b0§r, then this value corresponds to the §6end time of the loop§r, in ticks"
+  "clienttime.config.time.info.loopend": "The §6end time§r of the loop, in ticks"
 }
