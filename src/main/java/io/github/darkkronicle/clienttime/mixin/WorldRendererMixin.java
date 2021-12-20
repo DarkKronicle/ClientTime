@@ -18,8 +18,8 @@ public class WorldRendererMixin {
 
     @Inject(at = @At("HEAD"), method = "render")
     private void render(MatrixStack matrices, float tickDelta, long limitTime, boolean renderBlockOutline, Camera camera, GameRenderer gameRenderer, LightmapTextureManager lightmapTextureManager, Matrix4f positionMatrix, CallbackInfo ci) {
-
         if (ConfigStorage.Time.ACTIVE.config.getBooleanValue()) {
+            // A hook into the world render to update the time. This enables smooth animations and instant updates.
             TimeStorage.getInstance().update();
         }
 

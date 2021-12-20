@@ -8,6 +8,10 @@ import io.github.darkkronicle.clienttime.time.ITimeSupplier;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Time supplier that will go from a beginning point to an end point and then backwards back to the
+ * beginning point.
+ */
 public class LoopReverseTimeSupplier implements ITimeSupplier {
 
     @Override

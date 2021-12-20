@@ -8,6 +8,10 @@ import io.github.darkkronicle.clienttime.time.ITimeSupplier;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Time supplier that will loop from a beginning point to an end and then jump
+ * immediately back to the start.
+ */
 public class LoopSkipTimeSupplier implements ITimeSupplier {
 
     @Override
@@ -22,6 +26,7 @@ public class LoopSkipTimeSupplier implements ITimeSupplier {
 
         if (loopDif == 0) {
             // Prevent divide by zero issues.
+            // TODO make it so this could never happen
             loopStart++;
             loopDif = 1;
         }

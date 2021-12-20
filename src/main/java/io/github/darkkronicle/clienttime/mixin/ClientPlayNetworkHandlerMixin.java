@@ -14,7 +14,9 @@ public class ClientPlayNetworkHandlerMixin {
     @Inject(at = @At("HEAD"), method = "onWorldTimeUpdate", cancellable = true)
     private void onTimeUpdate(WorldTimeUpdateS2CPacket packet, CallbackInfo ci) {
         if (ConfigStorage.Time.ACTIVE.config.getBooleanValue()) {
-            // Prevent flickering and messing with time
+            // TODO store this information for future use
+            // This stops the client from being updated with information about the time.
+            // Disabling this ensures that there is no flickering.
             ci.cancel();
         }
     }

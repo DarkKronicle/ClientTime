@@ -8,6 +8,9 @@ import io.github.darkkronicle.clienttime.time.ITimeSupplier;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Static time supplier that will only return one time.
+ */
 public class StaticTimeSupplier implements ITimeSupplier {
 
     @Override

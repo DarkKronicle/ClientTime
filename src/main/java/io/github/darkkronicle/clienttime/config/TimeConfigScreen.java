@@ -45,6 +45,7 @@ public class TimeConfigScreen extends GuiConfigsBase {
         // Dirty check for change of time type
         if (!previousEntry.getStringValue().equals(ConfigStorage.Time.TIME_TYPE.config.getStringValue())) {
             previousEntry = ConfigStorage.Time.TIME_TYPE.config.getOptionListValue();
+            // Refresh entries to update the options
             getListWidget().refreshEntries();
         }
     }
