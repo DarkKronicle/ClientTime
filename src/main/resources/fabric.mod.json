@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "clienttime",
+  "version": "${version}",
+  "name": "ClientTime",
+  "description": "Modifies the time and sky for the client",
+  "authors": [
+    "DarkKronicle"
+  ],
+  "contact": {
+    "repo": "https://github.com/DarkKronicle/ClientTime/",
+    "issues": "https://github.com/DarkKronicle/ClientTime/issues",
+    "discord": "https://discord.gg/WnaE3uZxDA"
+  },
+  "license": "MPL-v2",
+  "icon": "assets/clienttime/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.darkkronicle.clienttime.ClientTime"
+    ],
+    "modmenu": [
+      "io.github.darkkronicle.clienttime.config.ModMenuImpl"
+    ]
+  },
+  "mixins": [
+    "clienttime.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": ">=1.18",
+    "malilib": ">=0.10.0-dev.26"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/WnaE3uZxDA"
+      }
+    }
+  }
+}
